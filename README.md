@@ -52,6 +52,14 @@ sempre na aba 2.
 | JA1955 | aba 2 (JA1955ROM) |
 | qualquer outra, ex.: ARC | aba 1, igual ao projetor |
 
+Antes, diga ao Holyrics qual é a sua tela: em **Ferramentas → Script**, crie
+um script com o conteúdo de
+[`holyrics/definir-telas.js`](holyrics/definir-telas.js) e execute uma vez.
+Ele lista as telas, você escolhe a sua, e ela passa a exibir a aba 2 na hora,
+o que já serve de teste.
+
+Depois, o gatilho:
+
 1. Na janela principal do Holyrics, abra **menu Ferramentas → Diversos →
    Gatilhos** e crie um gatilho novo.
 2. Em *quando*, escolha **ao exibir**; em *item*, **qualquer versículo**.
