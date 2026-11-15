@@ -43,21 +43,22 @@ As duas telas avançam juntas, versículo por versículo.
 ## Romaji só quando a Bíblia é a japonesa
 
 O script [`holyrics/romaji-no-retorno.js`](holyrics/romaji-no-retorno.js)
-troca sozinho a aba que a tela de retorno exibe. Ele não altera as versões
-carregadas nas abas. Exemplo: aba 1 = ARC, aba 2 = JA1955ROM, aba 3 = JA1955.
+troca sozinho a aba que a tela de retorno exibe. Ele não mexe nas abas da
+Bíblia: só lê a versão que está na aba 1, a projetada. A JA1955ROM fica
+sempre na aba 2.
 
-| Versão no projetor | Tela de retorno |
+| Aba 1 (projetor) | Tela de retorno |
 | --- | --- |
-| JA1955 | a aba da JA1955ROM |
-| qualquer outra, ex.: ARC | a mesma aba do projetor |
+| JA1955 | aba 2 (JA1955ROM) |
+| qualquer outra, ex.: ARC | aba 1, igual ao projetor |
 
 1. Na janela principal do Holyrics, abra **menu Ferramentas → Diversos →
    Gatilhos** e crie um gatilho novo.
 2. Em *quando*, escolha **ao exibir**; em *item*, **qualquer versículo**.
 3. Na ação (JavaScript), cole o conteúdo do arquivo.
 
-O script reconhece as versões pelo nome: a japonesa começa com `JA` e a romaji
-contém `ROM`.
+O script reconhece a versão japonesa pelo nome: começa com `JA` e não contém
+`ROM`.
 
 > Escrito a partir da documentação da API de scripts do Holyrics (v2.24+), sem
 > testar no programa. Ele age logo depois de o versículo aparecer, então o
