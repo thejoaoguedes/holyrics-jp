@@ -40,6 +40,30 @@ As duas telas avançam juntas, versículo por versículo.
 > foi testado num Holyrics de verdade: os arquivos foram validados, mas não sei
 > quais desses formatos a sua versão do programa importa.
 
+## Romaji só quando a Bíblia é a japonesa
+
+Com a configuração acima, a tela de retorno mostra sempre a aba 2, mesmo
+quando você projeta uma Bíblia em português. Para a troca ser automática, use
+o script [`holyrics/romaji-no-retorno.js`](holyrics/romaji-no-retorno.js):
+
+1. No Holyrics, abra **menu Arquivo → Configurações → Gatilhos** e crie um
+   gatilho novo.
+2. Em *quando*, escolha **ao exibir**; em *item*, **qualquer versículo**.
+3. Na ação (JavaScript), cole o conteúdo do arquivo.
+
+A cada versículo exibido o script olha a versão da aba 1:
+
+| Aba 1 | Tela de retorno |
+| --- | --- |
+| Bíblia japonesa (JA1955) | aba 2, com a JA1955-ROMAJI |
+| qualquer outra | aba 1, igual ao projetor |
+
+Ou seja: para usar, basta trocar a versão da aba 1 como você já faz.
+
+> Escrito a partir da documentação da API de scripts do Holyrics (v2.24+), sem
+> testar no programa. Se a troca só valer a partir do segundo versículo
+> exibido depois de mudar de versão, é o momento em que o gatilho dispara.
+
 ## Sobre o texto
 
 - A leitura de cada kanji vem do furigana anotado na própria fonte, não de um
