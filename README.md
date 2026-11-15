@@ -46,7 +46,7 @@ Com a configuração acima, a tela de retorno mostra sempre a aba 2, mesmo
 quando você projeta uma Bíblia em português. Para a troca ser automática, use
 o script [`holyrics/romaji-no-retorno.js`](holyrics/romaji-no-retorno.js):
 
-1. No Holyrics, abra **menu Arquivo → Configurações → Gatilhos** e crie um
+1. No Holyrics, abra **menu Ferramentas → Diversos → Gatilhos** e crie um
    gatilho novo.
 2. Em *quando*, escolha **ao exibir**; em *item*, **qualquer versículo**.
 3. Na ação (JavaScript), cole o conteúdo do arquivo.
